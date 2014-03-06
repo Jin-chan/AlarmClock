@@ -16,7 +16,6 @@ public class MainActivity extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Log.d("alerm", "call MainActivity.java");
 		super.onCreate(savedInstanceState);
 		this.getWindow().setSoftInputMode(LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		setContentView(R.layout.activity_main);
@@ -44,7 +43,6 @@ public class MainActivity extends Activity {
 		// intentで値を保持
 		intent.putExtra("alermHour",hour);
 		intent.putExtra("alermMinute", min);
-		//intent.putExtra("alermTime", alermTime)
 		startActivity(intent);
 	}
 
